@@ -1,0 +1,4 @@
+use  "../output/monthly-output.nc"
+let summer=temperature[l=6:8@ave]
+save/clobber/file=NH_summer.nc summer
+

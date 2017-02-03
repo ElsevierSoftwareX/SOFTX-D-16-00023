@@ -1,0 +1,35 @@
+set mode meta demo.plt
+
+cancel d/all
+cancel var/all
+cancel view
+
+use NH_summer.nc
+set region/x=-180:180/y=20:90
+
+set grid summer
+
+go mp_orthographic -45 35
+go mp_aspect
+
+let masked_temp = summer * mp_mask
+fill/lev=(-inf)(-10,50,5)(inf)/pal=temp_palette.spk/nolab/noaxes masked_temp, x_page, y_page
+
+use "../input/geography.nc"
+set grid landmask
+
+let masked_ice = landmask * mp_mask
+shade/over/nolab/noaxes/pal=cyan.spk/lev=(3)/nokey masked_ice, x_page, y_page
+
+go mp_land 1 
+go mp_graticule -180 180 45 20 90 20 1
+
+use NH_summer.nc
+set region/x=-180:180/y=20:90
+set grid summer
+contour/over/lev=(-10,50,5)dash(-10,0,5,1)dark(5,5,5,2)line(10,50,5,1)/nolab/noaxes/color=7/size=0.18/spacing=8 masked_temp, x_page, y_page
+
+go mp_label -45,20,1,0,.16,@TR@p"20^oN"
+go mp_label -45,60,1,0,.16,@TR@p"60^oN"
+
+cancel mode meta

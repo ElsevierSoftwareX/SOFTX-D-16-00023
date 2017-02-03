@@ -1,0 +1,71 @@
+ SUCCESSLY reading geography from [../input/geography.nc] into simulation!
+ SUCCESSLY reading albedo from [../input/albedo.nc] into simulation!
+
+ Radiation Constants   A: 210.30 B:   2.15
+
+ Diffusion Parameters
+ KlandSP:   0.20 KlandNP:   0.28
+     Keq:   0.65  Kocean:   0.40
+
+      Radiative Relaxation Times (C/B) 
+    Atmosphere over sea ice : 51.61 days
+       Atmosphere over snow : 33.81 days
+       Atmosphere over land : 35.69 days
+ Atmosphere over mixed layer:  4.39 yrs
+
+ Lon/Lat Monthly Mean 2D Albedo
+
+ Constant Solar Irradiance
+ Constant Orbital Parameters
+
+ Start Energy Balance Model simulation:
+
+  Year   Global Temperature
+    1     7.22595
+    2     9.53561
+    3    10.65554
+    4    11.60551
+    5    12.34113
+    6    12.89502
+    7    13.30758
+    8    13.61352
+    9    13.84004
+   10    14.00768
+   11    14.13177
+   12    14.22366
+   13    14.29172
+   14    14.34217
+   15    14.37957
+   16    14.40730
+   17    14.42787
+   18    14.44314
+   19    14.45446
+   20    14.46287
+   21    14.46911
+   22    14.47375
+   23    14.47719
+   24    14.47974
+   25    14.48164
+   26    14.48305
+   27    14.48410
+   28    14.48488
+   29    14.48545
+   30    14.48589
+   31    14.48620
+   32    14.48644
+   33    14.48661
+   34    14.48674
+   35    14.48684
+   36    14.48692
+   37    14.48697
+   38    14.48701
+   39    14.48704
+   40    14.48706
+   41    14.48708
+
+EQUILIBRIUM REACHED AFTER  41 YEARS. GLOBAL TEMP= 14.4871
+
+ Elapsed time:      0.61 minutes
+ Monthly temperature results stored successfully in ../output/monthly-output.nc!
+ 48 time steps temperature results stored successfully in 
+ ../output/timesteps-output.nc!
